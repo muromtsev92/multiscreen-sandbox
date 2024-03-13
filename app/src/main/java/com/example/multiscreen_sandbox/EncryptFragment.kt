@@ -14,7 +14,6 @@ class EncryptFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         val view = inflater.inflate(R.layout.fragment_encrypt, container, false)
         val message = EncryptFragmentArgs.fromBundle(requireArguments()).message
         val encryptedView = view.findViewById<TextView>(R.id.encrypted_message)
